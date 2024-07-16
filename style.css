@@ -606,22 +606,14 @@ section .title::after {
     width: 70%;
 }
 
-
-/* certifications section */
-
-
-/* certifications section styles */
-
 .certifications {
-    padding: 60px 0;
-    background: #fff;
-    /* White background */
+    background-color: #000;
     color: #fff;
-    /* Default white text color */
+    padding: 50px 0;
 }
 
 .certifications .max-width {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -629,82 +621,59 @@ section .title::after {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 40px;
-    color: #000;
-    /* Black text color for title */
+    color: #fff;
 }
 
 .certifications .cert-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+}
+
+.certifications .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .certifications .card {
-    background: #000;
-    /* Black background for cards */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: 0.3s ease;
-    width: 300px;
-    text-align: center;
+    flex: 0 0 23%;
+    box-sizing: border-box;
+    margin: 10px 0;
 }
 
-.certifications .card:hover {
-    transform: translateY(-10px);
-}
-
-.certifications .box {
+.certifications .card .box {
+    background: #333;
     padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
 }
 
-.certifications .image-container img {
+.certifications .card .box .image-container {
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid #333;
-    /* Dark border */
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.certifications .text {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 15px 0;
+.certifications .card .box .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.certifications .card .box .text {
+    font-size: 18px;
+    font-weight: 600;
     color: #fff;
-    /* White text color */
 }
 
-.certifications p {
+.certifications .card .box p {
     font-size: 16px;
     color: #ccc;
-    /* Light gray text color */
-    line-height: 1.5;
-    margin: 15px 0;
-}
-
-.certifications .btn-container {
-    margin-top: 15px;
-}
-
-.certifications .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s ease;
-}
-
-.certifications .btn-color-2 {
-    background: #3498db;
-    /* Blue button color */
-    color: #fff;
-    /* White text color */
-}
-
-.certifications .btn:hover {
-    opacity: 0.9;
 }
 
 .achievements {
